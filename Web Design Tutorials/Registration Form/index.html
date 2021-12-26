@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container{
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            display: flex;
+            width: 650px;
+        }
+
+        #container .left_panel{
+            height: 450px;
+            width: 50%;
+        }
+
+        #container .left_panel img{
+            height: 100%;
+            width: 100%;
+        }
+
+        #container .right_panel{
+            height: 450px;
+            width: 50%;
+            padding: 20px;
+        }
+
+        #container .right_panel h2{
+            color: red;
+        }
+
+        #container .right_panel input{
+            padding: 7px 5px;
+            width: 100%;
+            margin-top: 10px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #555;
+            font-size: 14px;
+            color: royalblue;
+        }
+
+        #container .right_panel input[type="submit"]{
+            background: red;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        #container .right_panel p{
+            font-size: 14px;
+            color: #111;
+        }
+
+        #container .right_panel p a{
+            text-decoration: none;
+            color: royalblue;
+        }
+
+        #container .right_panel button{
+            padding: 8px 20px;
+            width: 100%;
+            background: red;
+            border: none;
+            outline: none;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+
+        #container .right_panel button a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Let's make it responsive...! */
+
+        @media screen and (max-width:555px){
+            #container{
+                flex-direction: column;
+            }
+
+            #container .left_panel, #container .right_panel{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="left_panel">
+            <img src="1.jpg" alt="" height="450px">
+        </div>
+        <div class="right_panel">
+            <h2>Register Here</h2>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Username">
+                <input type="email" name="" id="" placeholder="Email Address">
+                <input type="password" name="" id="" placeholder="Password">
+                <input type="password" name="" id="" placeholder="Confirm Password">
+                <input type="submit" value="REGISTER">
+                <p>Have an account? <a href="#"> Sign In</a></p>
+                <button><a href="#"><span><ion-icon name="logo-google"></ion-icon></span> Sign Up with Google</a></button>
+                <button style="background: royalblue;"><a href="#"><span><ion-icon name="logo-facebook"></ion-icon></span> Sign Up with Facebook</a></button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
