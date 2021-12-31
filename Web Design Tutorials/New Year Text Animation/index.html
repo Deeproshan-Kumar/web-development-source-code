@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Text Animation - 2022</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #row{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 650px;
+            cursor: pointer;
+        }
+
+        #row:hover+h4{
+            transform: translate(0,0);
+        }
+
+        #row span{
+            font-size: 15em;
+            color: rgb(255,296,0);
+        }
+
+        #row span:nth-child(1){
+            text-shadow: 4px 4px 0 rgb(219,179,46),
+            8px 8px rgb(175,140,25),
+            12px 12px 0 rgb(141,116,34);
+        }
+
+        #row span:nth-child(2){
+            text-shadow: 4px 4px 0 rgb(219,179,46),
+            8px 8px rgb(175,140,25),
+            12px 12px 0 rgb(141,116,34);
+        }
+
+        #row span:nth-child(3){
+            text-shadow: 4px 4px 0 rgb(219,179,46),
+            8px 8px rgb(175,140,25),
+            12px 12px 0 rgb(141,116,34);
+        }
+
+        #row span:nth-child(4){
+            text-shadow: 4px 4px 0 rgb(219,179,46),
+            8px 8px rgb(175,140,25),
+            12px 12px 0 rgb(141,116,34);
+        }
+
+        h4{
+            color: #fff;
+            font-size: 2em;
+            letter-spacing: 1px;
+            transform: translate(0,250px);
+            transition: .7s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="row">
+        <span>2</span>
+        <span>0</span>
+        <span>2</span>
+        <span>2</span>
+    </div>
+    <h4>Happy New Year</h4>
+</body>
+</html>
